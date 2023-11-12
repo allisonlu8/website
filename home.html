@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Page Title</title>
+    <title>Allison Here</title>
 </head>
 <body>
     <!-- Your content goes here -->
 </body>
 </html>
 
-// include header
 <header>
     <h1>Your Full Name</h1>
     <p>Web Developer &amp; Creative Thinker</p>
 </header>
 
 
-// navigation bar
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -28,17 +26,86 @@
 </nav>
 
 
-// home page content
 <section id="about-me">
     <h2>About Me</h2>
     <p>
-        Hi, I'm Your Name! I'm a passionate web developer with a keen interest in creating meaningful and innovative projects.
+        I'm a current senior at BU, majroing in Statistics and Computer Science and minoring in Public Health.
     </p>
     <!-- Add more content about yourself -->
 </section>
 
-// footer
+
 <footer>
-    <p>Contact: your.email@example.com</p>
-    <p>Follow me on <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a></p>
+    <p>Contact: allisonlu100@gmail.com</p>
+    <p>Follow me on <a href="https://instagram.com/wholu.moo" target="_blank">instagram</a></p>
 </footer>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Home Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="pageTitle">Welcome to My Website</h1>
+    </header>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="#" onclick="showHome()">Home</a></li>
+            <li><a href="#" onclick="showProjects()">Projects</a></li>
+            <li><a href="#" onclick="showAbout()">About</a></li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <section id="homeSection">
+            <h2>Home Section</h2>
+            <p>This is the home section content.</p>
+        </section>
+
+        <section id="projectsSection" style="display:none;">
+            <h2>Projects Section</h2>
+            <p>This is the projects section content.</p>
+        </section>
+
+        <section id="aboutSection" style="display:none;">
+            <h2>About Section</h2>
+            <p>This is the about section content.</p>
+        </section>
+    </main>
+
+    <script>
+        function showHome() {
+            document.getElementById('pageTitle').innerText = 'Welcome to My Website';
+            document.getElementById('homeSection').style.display = 'block';
+            document.getElementById('projectsSection').style.display = 'none';
+            document.getElementById('aboutSection').style.display = 'none';
+        }
+
+        function showProjects() {
+            document.getElementById('pageTitle').innerText = 'My Projects';
+            document.getElementById('homeSection').style.display = 'none';
+            document.getElementById('projectsSection').style.display = 'block';
+            document.getElementById('aboutSection').style.display = 'none';
+        }
+
+        function showAbout() {
+            document.getElementById('pageTitle').innerText = 'About Me';
+            document.getElementById('homeSection').style.display = 'none';
+            document.getElementById('projectsSection').style.display = 'none';
+            document.getElementById('aboutSection').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
