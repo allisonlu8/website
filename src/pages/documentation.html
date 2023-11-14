@@ -33,31 +33,27 @@
     <h3>Documentation with loved ones</h3>
     <!-- Inserting images using the img tag -->
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyL/Jf4/xDIlBmy6L5Y3oiGg6D5RJfIqO1" crossorigin="anonymous">
-
-    <!-- Slick Carousel CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
-    <!-- jQuery and Bootstrap JS (required for Slick Carousel) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-L9G8KF+E+X7N/h47Lof9zh8UuVd+CNCRdt4VuyG65gUpJPGlT7EKg6axnbSdRSUp" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyL/Jf4/xDIlBmy6L5Y3oiGg6D5RJfIqO1" crossorigin="anonymous"></script>
-
-    <!-- Slick Carousel JS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <!-- Custom CSS -->
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true, // Display dots for navigation
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+    </script>
     <style>
         /* Mobile view */
         @media (max-width: 768px) {
-            .carousel-item {
-                width: 100%;
-            }
+        .carousel-item {
+            width: 100%;
         }
+    }
     </style>
+
     
+
     <img src="../img/ireland kaing.JPG" alt="Kat and Ting">
     <img src="../img/ireland tiat.JPG" alt="Kat and Ting">
     
