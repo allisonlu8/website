@@ -17,6 +17,10 @@
             max-width: 30%;
             height: auto;
         }
+        /* Apply a rotation based on the unique ID */
+        #rotateSpecificImage {
+            transform: rotate(45deg);
+        }
     </style>
 </head>
 <body>
@@ -52,9 +56,11 @@
 
     <!-- Gallery using a div container -->
     <div class="image-gallery">
-        <img src="../img/ireland kaing.JPG" alt="Kat and Ting">
-        <img src="../img/ireland tiat.JPG" alt="Kat and Ting">
-        <img src="image3.jpg" alt="Description of Image 3">
+        <img src="../img/ireland kat+ting2.JPG.JPG" alt="Kat and Ting">
+        <img src="../img/ireland kat+ting2.JPG" alt="Kat and Ting">
+        <img src="../img/vicky.JPG" alt="Vicky">
+        <img src="../img/grace.jpg" alt="Grace">
+        <img id="rotateSpecificImage" src="../img/ireland kat+ting2.JPG" alt="Rosanna">
         <!-- Add more images as needed -->
     </div>
 </section>
