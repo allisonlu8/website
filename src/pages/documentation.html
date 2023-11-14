@@ -32,31 +32,28 @@
     <p>Nothing like sharing happiness with one another</p>
     <h3>Documentation with loved ones</h3>
     <!-- Inserting images using the img tag -->
-
-    <script>
-        $(document).ready(function(){
-            $('.carousel').slick({
-                dots: true, // Display dots for navigation
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1
-            });
-        });
-    </script>
+</section>
     <style>
-        /* Mobile view */
-        @media (max-width: 768px) {
-        .carousel-item {
-            width: 100%;
+        /* This CSS rule ensures that the image scales down to fit the screen width */
+        img {
+            width: 100%; /* Make the image take up 100% of its container's width */
+            max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+            height: auto; /* Maintain the image's aspect ratio */
         }
-    }
     </style>
 
-    
+    <h1>Documentation with loved ones</h1>
+
+    <!-- Gallery using a div container -->
+    <div class="image-gallery">
+        <img src="../img/ireland kaing.JPG" alt="Kat and Ting">
+        <img src="../img/ireland tiat.JPG" alt="Kat and Ting">
+        <img src="image3.jpg" alt="Description of Image 3">
+        <!-- Add more images as needed -->
+    </div>
 
     <img src="../img/ireland kaing.JPG" alt="Kat and Ting">
     <img src="../img/ireland tiat.JPG" alt="Kat and Ting">
-    
 </section>
 
 <section id="kpop">
