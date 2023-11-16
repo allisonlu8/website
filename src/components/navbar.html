@@ -1,102 +1,95 @@
 <!-- navbar.html -->
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+    <link rel="stylesheet" href="styles.css">
 
-        header {
-            background-color: #F7D7BB;
-            color: #E0C5B4;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../img/headphones.svg" alt="Logo">
+    </div>
+    <div class="brand">
+      <h1>Allison Lu</h1>
+    </div>
+-->
+    <!--
+    <div class="nav-categories">
+      <a href="#journey">Journey</a>
+      <div class="dropdown">
+        <button class="dropbtn">Adventure</button>
+        <div class="dropdown-content">
+          <a href="#movement">Movement</a>
+          <a href="#documentation">Documentation</a>
+          <a href="#illustration">Illustration</a>
+        </div>
+      <a href="#about">About</a>
+    </div>
+    <div class="dropdown">
+      <a href="#movement">Movement</a>
+      <a href="#documentation">Documentation</a>
+      <a href="#illustration">Illustration</a>
+    </div>
+  </nav>-->
 
-        #logo {
-            display: flex;
-            align-items: center;
-        }
+  <div class="nav-container">
+    <div class="nav-categories">
+      <a href="#journey">Journey</a>
+      <div class="dropdown">
+        <button class="dropbtn">Adventure</button>
+        <div class="dropdown-content">
+          <a href="#movement">Movement</a>
+          <a href="#documentation">Documentation</a>
+          <a href="#illustration">Illustration</a>
+        </div>
+      </div>
+      <a href="#about">About</a>
+    </div>
+  </div>
+  </nav>
 
-        #logo img {
-            width: 40px; /* Adjust the size of your logo */
-            margin-right: 10px; /* Add some spacing between logo and text */
-        }
+  <script src="navbar.js"></script>
+</body>
+</html>
 
-        nav {
-            display: flex;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-            margin-right: 10px;
-            cursor: pointer;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #333;
-            min-width: 160px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: #fff;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            cursor: pointer;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    </style>
+<!-- navbar.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <div id="logo">
-            <img src="../img/headphones.svg" alt="Logo">
-            <span>Allison Lu</span>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <div class="brand">
+      <h1>Your Name</h1>
+    </div>
+    <div class="nav-container">
+      <div class="nav-categories">
+        <a href="#journey">Journey</a>
+        <div class="dropdown">
+          <span class="dropbtn">Adventure</span>
+          <div class="dropdown-content">
+            <a href="#movement">Movement</a>
+            <a href="#documentation">Documentation</a>
+            <a href="#illustration">Illustration</a>
+          </div>
         </div>
-        <nav>
-            <a onclick="navigate('home')">Home</a>
-            <div class="dropdown">
-                <a onclick="navigate('journey')">Journey</a>
-                <div class="dropdown-content">
-                    <a onclick="navigate('coding-projects')">Coding Projects</a>
-                    <a onclick="navigate('WHOBao')">WHOBao</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a onclick="navigate('adventure')">Adventure</a>
-                <div class="dropdown-content">
-                    <a onclick="navigate('movement')">Movement</a>
-                    <a onclick="navigate('documentation')">Documentation</a>
-                    <a onclick="navigate('illustration')">Illustration</a>
-                </div>
-            </div>
-            <a onclick="navigate('about')">About</a>
-        </nav>
-    </header>
+        <a href="#about">About</a>
+      </div>
+    </div>
+  </nav>
 
-    <script src="navbar.js"></script>
+  <!-- Include the JavaScript file -->
+  <script src="scripts.js"></script>
+
 </body>
 </html>
