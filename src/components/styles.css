@@ -48,7 +48,7 @@ body {
   }
   
   .navbar {
-    background-color: #333;
+    background-color: #f7d7bb;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -61,7 +61,7 @@ body {
   }
   
   .brand h1 {
-    color: white;
+    color: #d68a57;
     margin: 0;
   }
   
@@ -72,12 +72,23 @@ body {
   .nav-categories {
     display: flex;
   }
+
+  .navbar {
+    position: relative; /* Add relative positioning to the navbar container */
+    height: auto
+  }
   
+
+.nav-categories {
+    display: flex;
+    align-items: center; /* Align navigation elements vertically in the middle */
+  }
+
   .navbar a,
   .navbar .dropbtn {
-    color: white;
+    color: #DEA886;
     text-decoration: none;
-    padding: 10px;
+    padding: 15px; /*Adjust the padding to change the size of navigation elements*/
     display: block;
   }
   
@@ -131,14 +142,18 @@ body {
   }
   */
 
+
+
   .dropdown-content {
     display: none;
-    position: absolute;
-    background-color: #333;
+    position: aboslute;
+    background-color: #D4C9BE;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
     max-width: max-content; /* Adjust to your preference */
     white-space: nowrap;
+    top: 100%; /* Position the dropdown right under the "Adventure" tab */
+    width: auto
   }
   
   .dropdown-content a {
