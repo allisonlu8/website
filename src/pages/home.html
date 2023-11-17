@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allison Lu</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../components/styles.css">
+    <!-- Include common structure from index.html -->
+<!-- Use fetch API to include it dynamically -->
+<script>
+    fetch('../components/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.write(data);
+        });
+</script>
 </head>
+
 <body>
     <!-- Your content goes here -->
     <!-- Include the navigation bar using JavaScript -->
