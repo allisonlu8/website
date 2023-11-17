@@ -80,6 +80,11 @@ body {
     color: black;
   }
 
+  .navbar a.active {
+    background-color: #ddd;
+    color: black;
+  }
+  
   .dropdown-content {
     display: none;
     position: aboslute;
