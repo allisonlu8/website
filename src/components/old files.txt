@@ -1,0 +1,421 @@
+old files:
+navbar.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="navbar.js"></script>
+    <title>Allison Lu</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../img/headphones.svg" alt="Your Logo">
+            <h1>Allison Lu </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../pages/journey.html">Journey</a></li>
+                <li class="dropdown">
+                    <a href="../pages/adventure.html">Adventure</a>
+                    <div class="dropdown-content">
+                        <a href="../pages/movement.html">Movement</a>
+                        <a href="../pages/documentation.html">Documentation</a>
+                        <a href="../pages/illustration.html">Illustration</a>
+                    </div>
+                </li>
+                <li><a href="../pages/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Your page content goes here -->
+
+</body>
+
+</html>
+
+<!-- navbar.html -->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../img/headphones.svg" alt="Logo">
+    </div>
+    <div class="brand">
+      <h1>Allison Lu</h1>
+    </div>
+    <div class="nav-container">
+      <div class="nav-categories">
+        <a id="journey-tab" href="journey.html">Journey</a>-->
+        <!--<a href="#journey">Journey</a>-->
+       <!--
+        <div class="dropdown">
+          <span class="dropbtn">Adventure</span>
+          <div class="dropdown-content">-->
+            <!--<a href="#movement">Movement</a>
+            <a href="#documentation">Documentation</a>
+            <a href="#illustration">Illustration</a>-->
+            <!--
+            <a href="movement.html">Movement</a>
+            <a href="documentation.html">Documentation</a>
+            <a href="illustration.html">Illustration</a>
+          </div>
+        </div>!-->
+        <!--<a href="#about">About</a>-->
+        <!--<a id="about-tab" href="about.html">About</a>
+      </div>
+    </div>
+  </nav>-->
+
+  <!-- Include the JavaScript file -->
+  <!--<script src="scripts.js"></script>
+
+</body>
+</html>-->
+
+-----
+styles.css
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    /*padding: 0;
+    box-sizing: border-box;*/
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dfd5c3; /* Earth tone color */
+    padding: 15px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 40px; /* Adjust the size of your logo */
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #534741; /* Earth tone color */
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #ff6347; /* Adjust the color for the active link */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #dfd5c3; /* Earth tone color */
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: #534741; /* Earth tone color */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  /*
+  header {
+    background-color: #F7D7BB;
+    color: #E0C5B4;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dfd5c3; /* Earth tone color 
+    padding: 15px 20px;
+}
+  
+  section {
+    padding: 1em;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+  .navbar {
+    background-color: #f7d7bb;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo img {
+    max-height: 30px;
+  }
+  
+  .brand h1 {
+    color: #d68a57;
+    margin: 0;
+  }
+
+  /*Navigation bar
+  
+  .nav-container {
+    display: flex;
+  }
+  
+  .nav-categories {
+    display: flex;
+  }
+
+  .navbar {
+    position: relative; /* Add relative positioning to the navbar container 
+    height: auto
+  }
+
+  .nav-categories {
+    display: flex;
+    align-items: center; /* Align navigation elements vertically in the middle 
+  }
+
+  .navbar a,
+  .navbar .dropbtn {
+    color: #DEA886;
+    text-decoration: none;
+    padding: 15px; /*Adjust the padding to change the size of navigation elements
+    display: block;
+  }
+  
+  .navbar a:hover,
+  .navbar .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .navbar a.active {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: aboslute;
+    background-color: #D4C9BE;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-width: max-content; /* Adjust to your preference 
+    white-space: nowrap;
+    top: 100%; /* Position the dropdown right under the "Adventure" tab 
+    width: auto
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 40px; /* Adjust the distance from the dropdown button 
+    left: 0;
+    width: max-content; /* Set the width to the content's intrinsic width 
+  }
+*/
+
+----
+navbar.js
+// Add this script in the head of your HTML or in a separate scripts.js file
+  // scripts.js
+  /*
+document.addEventListener("DOMContentLoaded", function () {
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('.navbar a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        // Get the target section id from the href attribute
+        const sectionId = this.getAttribute('href').substring(1);
+  
+        // Check if the sectionId matches a specific page
+        if (sectionId === 'journey' || sectionId === 'adventure' || sectionId === 'about') {
+          // Redirect to the corresponding page
+          window.location.href = `${sectionId}.html`;
+        } else {
+          // Scroll to other sections using smooth scrolling
+          const section = document.getElementById(sectionId);
+          if (section) {
+            section.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+  */
+ // navbar.js
+ /*document.addEventListener("DOMContentLoaded", function () {
+    // Get the current page filename
+    var currentPage = window.location.pathname.split("/").pop();
+
+    // Remove the file extension from the filename
+    currentPage = currentPage.replace(".html", "");
+
+    // Add the 'active' class to the corresponding navigation link
+    var navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(function (link) {
+        var linkPage = link.href.split("/").pop().replace(".html", "");
+        if (linkPage === currentPage) {
+            link.classList.add("active");
+        }
+
+        // Add click event listener to handle navigation
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default behavior of the link
+
+            // Get the target page from the link's href
+            var targetPage = this.href.split("/").pop().replace(".html", "");
+
+            // Redirect the user to the target page
+            window.location.href = "../src/pages/" + targetPage + ".html";
+        });
+    });
+});*/
+/*
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the current page filename
+    var currentPage = window.location.pathname.split("/").pop();
+
+    // Remove the file extension from the filename
+    currentPage = currentPage.replace(".html", "");
+
+    // Add the 'active' class to the corresponding navigation link
+    var navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(function (link) {
+        var linkPage = link.href.split("/").pop().replace(".html", "");
+        if (linkPage === currentPage) {
+            link.classList.add("active");
+        }
+
+        // Add click event listener to handle navigation
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default behavior of the link
+
+            // Get the target page from the link's href
+            var targetPage = this.href.split("/").pop().replace(".html", "");
+
+            // Redirect the user to the target page
+            window.location.href = "../pages/" + targetPage + ".html";
+        });
+    });
+
+
+    // Dropdown functionality
+    const dropdownBtn = document.querySelector('.dropbtn');
+    const dropdownContent = document.querySelector('.dropdown-content');
+  
+    dropdownBtn.addEventListener('mouseover', function () {
+      dropdownContent.style.display = 'block';
+    });
+  
+    dropdownBtn.addEventListener('mouseout', function () {
+      dropdownContent.style.display = 'none';
+    });
+  
+    // Handle clicking on dropdown items
+    document.querySelectorAll('.dropdown-content a').forEach(item => {
+      item.addEventListener('click', function () {
+        // Get the href attribute of the clicked item
+        const href = this.getAttribute('href');
+  
+        // Redirect to the corresponding page
+        window.location.href = href;
+      });
+    });
+  });
+  */
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the current page filename
+    var currentPage = window.location.pathname.split("/").pop();
+
+    // Remove the file extension from the filename
+    currentPage = currentPage.replace(".html", "");
+
+    // Add the 'active' class to the corresponding navigation link
+    var navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(function (link) {
+        var linkPage = link.href.split("/").pop().replace(".html", "");
+        if (linkPage === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Add click event listener to handle navigation
+    var navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default behavior of the link
+
+            // Get the target page from the link's href
+            var targetPage = this.href.split("/").pop().replace(".html", "");
+
+            // Redirect the user to the target page
+            window.location.href = "../pages/" + targetPage + ".html";
+        });
+    });
+});
