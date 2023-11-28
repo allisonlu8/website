@@ -182,6 +182,7 @@ function createSlider(sliderId, slidePrefix, imageCount) {
 var slider1 = createSlider("slider1", "slide1_", 2);
 var slider2 = createSlider("slider2", "slide2_", 2);
 
+
 /*
 document.addEventListener("DOMContentLoaded", function () {
     // Get the current page filename

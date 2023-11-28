@@ -26,9 +26,15 @@ header {
 }
 
 .header-adventure{
-    background-color: #D4C9BE; /* Unique background color for Page 1 header */
+    background-color: #D4C9BE; /* Unique background color for Adventure header */
     padding: 10px;
 }
+
+.header-documentation{
+    background-color: #D4C9BE; /* Unique background color for Documentation header */
+    padding: 10px;
+}
+
 .custom-header {
     font-family: 'Ariel', sans-serif;
     color: #333;
@@ -51,8 +57,19 @@ header {
     margin-right: 20px;
 }
 
-/*navigation*/
+/*footer*/
+footer {
+    display: none; /* Initially hide the footer */
+    background-color: #8E9C95; /* Choose your preferred background color */
+    color: white; /* Text color for better readability on the dark background */
+    text-align: center;
+    padding: 20px; /* Adjust the padding to your liking */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
+/*navigation*/
 nav ul {
     list-style: none;
     display: flex;
