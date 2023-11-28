@@ -257,3 +257,30 @@ nav ul li a.active {
 .thumbnail.active {
     border: 2px solid #fff; /* Border color when hovered or selected */
 }
+
+/*for videos*/
+/* Container for video groups */
+.video-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for each video group */
+.video-group {
+    flex: 0 0 calc(50% - 10px); /* Two groups in a row with a small gap in between */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust as needed */
+    margin-top: 30px;
+}
+
+/* Style for each video */
+.video {
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+/* Style for text under videos */
+.text {
+    text-align: center;
+}
