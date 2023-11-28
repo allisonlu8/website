@@ -1,0 +1,112 @@
+<!-- slider.html -->
+
+<div class="slider-container" id="slider1">
+    <div class="slider">
+        <button class="prev" onclick="prevSlide(1)">❮</button>
+        <div class="slide" id="slide1a">
+            <img src="../img/profile/ireland kat+ting1.JPG" alt="Kat and Ting">
+        </div>
+        <div class="slide" id="slide1b">
+            <img src="../img/profile/ireland kat+ting2.JPG" alt="Kat and Ting">
+        </div>
+        <div class="slide" id="slide1c">
+            <img src="../img/profile/rian.jpg" alt="Rian">
+        </div>
+        <div class="slide" id="slide1d">
+            <img src="../img/profile/vicky.JPG" alt="Vicky">
+        </div>
+        <div class="slide" id="slide1e">
+            <img src="../img/profile/grace.JPG" alt="Grace">
+        </div>
+        <div class="slide" id="slide1f">
+            <img src="../img/profile/lanlan.jpg" alt="LanLan">
+        </div>
+        <div class="slide" id="slide1g">
+            <img src="../img/profile/steph ting julie.jpg" alt="Steph, Ting, Julie">
+        </div>
+        <div class="slide" id="slide1h">
+            <img id="rotateSpecificImage" src="../img/profile/rosanna.jpg" alt="Rosanna">
+        </div>
+        <button class="next" onclick="nextSlide(1)">❯</button>
+        <!-- Add more slides as needed -->
+    </div>
+        <div class="thumbnail-container">
+            <div class="thumbnails" id="thumbnails1">
+                <img src="../img/profile/ireland kat+ting1.JPG" alt="Kat and Ting" onclick="currentSlide(1, 1)" class="thumbnail">
+                <img src="../img/profile/ireland kat+ting2.JPG" alt="Kat and Ting" onclick="currentSlide(2, 1)" class="thumbnail">
+                <img src="../img/profile/rian.jpg" alt="Rian" onclick="currentSlide(3, 1)" class="thumbnail">
+                <img src="../img/profile/vicky.jpg" alt="Vicky" onclick="currentSlide(4, 1)" class="thumbnail">
+                <img src="../img/profile/grace.jpg" alt="Grace" onclick="currentSlide(5, 1)" class="thumbnail">
+                <img src="../img/profile/lanlan.jpg" alt="LanLan" onclick="currentSlide(6, 1)" class="thumbnail">
+                <img src="../img/profile/steph ting julie.jpg" alt="Steph, Ting, Julie" onclick="currentSlide(7,1 )" class="thumbnail">
+                <img id="rotateSpecificImage" src="../img/profile/rosanna.jpg" alt="Rosanna" onclick="currentSlide(8, 1)" class="thumbnail">
+                <!-- Add more thumbnails as needed -->
+            </div>
+    </div>
+</div>
+
+<div class="slider-container" id="slider2">
+    <div class="slider">
+        <button class="prev" onclick="prevSlide(2)">❮</button>
+        <div class="slide" id="slide2a">
+            <img src="../img/view/beach.jpg" alt="Tahoe beach">
+        </div>
+        <div class="slide" id="slide2b">
+            <img src="../img/view/island.jpg" alt="Tahoe island">
+        </div>
+        <div class="slide" id="slide2c">
+            <img src="../img/view/montreux.JPG" alt="Montreux">
+        </div>
+        <!-- Add more slides as needed -->
+        <button class="next" onclick="nextSlide(1)">❯</button>
+        
+    </div>
+    <div class="slider-nav">
+        <div class="thumbnail-container">
+            <div class="thumbnails" id="thumbnails2">
+                <img src="../img/view/beach.jpg" alt = "Tahoe beach" onclick="currentSlide(1 ,2)" class="thumbnail">
+                <img src="../img/view/island.jpg" alt="Tahoe island" onclick="currentSlide(2, 2)" class="thumbnail">
+                <img src="../img/view/montreux.JPG" alt="Montreux" onclick="currentSlide(3, 2)" class="thumbnail">
+                <!-- Add more thumbnails as needed -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slider-container" id="slider3">
+    <div class="slider">
+        <button class="prev" onclick="prevSlide(2)">❮</button>
+        <div class="slide" id="slide3a">
+            <img src="../img/artwork/eye.jpg" alt="Eye Forest">
+        </div>
+        <div class="slide" id="slide3b">
+            <img src="../img/artwork/girl backpack.jpg" alt="Girl with backpack">
+        </div>
+        <div class="slide" id="slide3c">
+            <img src="../img/artwork/lightbulb.jpg" alt="Fish and lightbulb">
+        </div>
+        <div class="slide" id="slide3d">
+            <img src="../img/artwork/cherry blossom.jpeg" alt="Cherry Blossoms">
+        </div>
+        <div class="slide" id="slide3e">
+            <img src="../img/artwork/mountain.jpeg" alt="Mountain">
+        </div>
+        <!-- Add more slides as needed -->
+        <button class="next" onclick="nextSlide(1)">❯</button>
+        
+    </div>
+    <div class="slider-nav">
+        <div class="thumbnail-container">
+            <div class="thumbnails" id="thumbnails2">
+                <img src="../img/artwork/eye.jpg" alt="Eye Forest" onclick="currentSlide(1, 3)" class="thumbnail">
+                    <img src="../img/artwork/girl backpack.jpg" alt="Girl with backpack" onclick="currentSlide(2, 3)" class="thumbnail">
+                    <img src="../img/artwork/lightbulb.jpg" alt="Fish and lightbulb" onclick="currentSlide(3, 3)" class="thumbnail">
+                    <img src="../img/artwork/cherry blossom.jpeg" alt="Cherry Blossoms" onclick="currentSlide(4, 3)" class="thumbnail">
+                    <img src="../img/artwork/mountain.jpeg" alt="Mountain" onclick="currentSlide(5, 3)" class="thumbnail">
+                    <!-- Add more thumbnails as needed -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
