@@ -88,7 +88,16 @@ footer {
     width: 100%;
 }
 
+.profile {
+    height: 50vh;
+    object-fit: cover;
+}
+
 /*navigation*/
+nav{
+    margin-left: auto;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -180,6 +189,7 @@ nav ul li a.active {
 
 #about-me {
     background-color: #B3724D;
+    
 }
 
 #coding-projects {
@@ -283,4 +293,48 @@ nav ul li a.active {
 /* Style for text under videos */
 .text {
     text-align: center;
+}
+
+/* for resume*/
+/* Centered title */
+.resume-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Work Experience section */
+.work-experience {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+/*Technical Skills section*/
+.technical-skills{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+/*Certification section*/
+.certification{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+/* Side title */
+.side-title {
+    flex: 0 0 30%; /* Adjust as needed */
+}
+
+/* Experiences */
+.sideTitle {
+    flex: 0 0 65%; /* Adjust as needed */
+}
+
+/* Individual experience */
+.description {
+    margin-bottom: 20px;
 }
