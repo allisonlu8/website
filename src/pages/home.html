@@ -6,20 +6,14 @@
     <title>Allison Lu</title>
     <link rel="stylesheet" href="../components/styles.css">
     <!-- Include common structure from index.html -->
-<!-- Use fetch API to include it dynamically -->
-<script>
-    fetch('../components/navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.write(data);
-        });
-</script>
+    <link rel="stylesheet" href="../components/style.css">
+    <script defer src="../components/script.js"></script>
 </head>
 
 <body>
     <!-- Your content goes here -->
     <!-- Include the navigation bar using JavaScript -->
-    <iframe src="../components/navbar.html" frameborder="0" width="100%" height="60"></iframe>
+    <div id="navbar-container"></div>
 </body>
 </html>
 
