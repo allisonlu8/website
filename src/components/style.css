@@ -95,8 +95,6 @@ nav ul li a.active {
     display: block;
 }
 
-
-
 /*for sections*/
 .section {
     height: 50vh; /* Half height of the viewport */
@@ -105,6 +103,7 @@ nav ul li a.active {
     justify-content: center;
     text-align: center;
     color: #fff;
+    padding: 15px 20px;
 }
 
 #movement {
@@ -126,7 +125,8 @@ nav ul li a.active {
     background-position: center;
 }
 
-/*slider*/
+
+/*slider & thumbnail for images*/
 .slider-container {
     position: relative;
     max-width: 800px;
@@ -134,7 +134,7 @@ nav ul li a.active {
 }
 
 .slider {
-    display: flex;
+    position: relative;
     width: 100%;
     overflow: hidden;
 }
@@ -142,6 +142,7 @@ nav ul li a.active {
 .slide {
     width: 100%;
     flex: 0 0 auto;
+    display: none;
 }
 
 .slide img {
@@ -149,39 +150,46 @@ nav ul li a.active {
     height: auto;
 }
 
-.slider-nav {
+.slider button {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
-}
-
-.slider-nav button {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
     background-color: transparent;
     color: #fff;
     border: none;
-    font-size: 20px;
     cursor: pointer;
-    margin: 0 10px;
 }
 
-.slider-dots {
-    display: inline-block;
+.prev {
+    left: 10px;
 }
 
-.dot {
-    height: 15px;
-    width: 15px;
+.next {
+    right: 10px;
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflow to only show four thumbnails at a time */
+}
+
+.thumbnails {
+    display: flex;
+}
+
+.thumbnail {
+    width: 40px;
+    height: 40px;
     margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+    cursor: pointer;
+    border: 2px solid transparent; /* Transparent border initially */
+    transition: border 0.3s ease;
 }
 
-.dot.active {
-    background-color: #717171;
+.thumbnail:hover,
+.thumbnail.active {
+    border: 2px solid #fff; /* Border color when hovered or selected */
 }

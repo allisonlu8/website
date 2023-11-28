@@ -115,40 +115,72 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // for the slider photos
-var slideIndex = 1;
-showSlides(slideIndex);
+function createSlider(sliderId, slidePrefix, imageCount) {
+    var slideIndex = 1;
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("slide");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    function plusSlides(n) {
+        showSlides((slideIndex += n), sliderId);
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+
+    function currentSlide(n) {
+        showSlides((slideIndex = n), sliderId);
     }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+
+    function showSlides(n, id) {
+        var i;
+        var slides = document.querySelectorAll(`#${id} .slide`);
+        var thumbnails = document.querySelectorAll(`#${id} .thumbnail`);
+        var thumbnailsContainer = document.querySelector(`#${id} .thumbnails`);
+
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            thumbnails[i].classList.remove("active");
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        thumbnails[slideIndex - 1].classList.add("active");
+
+        // Scroll the thumbnails container to make the current thumbnail visible
+        var thumbnailIndex = Math.min(slideIndex - 1, thumbnails.length - 1);
+        thumbnailsContainer.scrollLeft =
+            thumbnailIndex * (thumbnails[0].offsetWidth + 5);
+    }
+
+    function nextSlide() {
+        plusSlides(1);
+    }
+
+    function prevSlide() {
+        plusSlides(-1);
+    }
+
+    function autoSlide() {
+        plusSlides(1);
+        setTimeout(autoSlide, 3000); // Change slide every 3 seconds
+    }
+
+    // Start automatic sliding
+    setTimeout(autoSlide, 3000);
+
+    // Return the slide index and functions for external control
+    return {
+        slideIndex: slideIndex,
+        nextSlide: nextSlide,
+        prevSlide: prevSlide,
+        currentSlide: currentSlide
+    };
 }
 
-function nextSlide() {
-    plusSlides(1);
-}
-
-function prevSlide() {
-    plusSlides(-1);
-}
+// Create two sliders
+var slider1 = createSlider("slider1", "slide1_", 2);
+var slider2 = createSlider("slider2", "slide2_", 2);
 
 /*
 document.addEventListener("DOMContentLoaded", function () {
