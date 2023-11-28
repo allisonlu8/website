@@ -1,14 +1,44 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    background-color: #F7D7BB; /* Earth tone color */
+    color: #534741; /* Earth tone color for text */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #dfd5c3; /* Earth tone color */
+    background-color: #e5d3b2; /* Earth tone color */
     padding: 15px 20px;
+}
+
+.header-content {
+    text-align: left; /* Left align content */
+    height: 75vh;
+    padding: 15px 20px;
+}
+
+.header-about {
+    background-color: #D4C9BE; /* Unique background color for About header */
+    padding: 10px;
+}
+
+.header-adventure{
+    background-color: #D4C9BE; /* Unique background color for Page 1 header */
+    padding: 10px;
+}
+.custom-header {
+    font-family: 'Ariel', sans-serif;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 5px; /* Add some space between title and description */
+}
+
+.header-description {
+    color: #666;
+    font-size: 18px;
 }
 
 .logo-container {
@@ -17,8 +47,8 @@ header {
 }
 
 .logo-container img {
-    width: 40px; /* Adjust the size of your logo */
-    margin-right: 10px;
+    width: 100px; /* Adjust the size of your logo */
+    margin-right: 20px;
 }
 
 nav ul {
@@ -37,7 +67,7 @@ nav ul li a {
 }
 
 nav ul li a.active {
-    color: #ff6347; /* Adjust the color for the active link */
+    color: #B3724D; /* Adjust the color for the active link */
 }
 
 .dropdown {
@@ -47,7 +77,7 @@ nav ul li a.active {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #dfd5c3; /* Earth tone color */
+    background-color: #cabca3; /* Earth tone color */
     min-width: 160px;
 }
 
@@ -60,4 +90,32 @@ nav ul li a.active {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.section {
+    height: 50vh; /* Half height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#movement {
+    background-color: B3724D;
+    background-image: url('section1-background.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+#documentation {
+    background-image: url('section2-background.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+#illustration {
+    background-image: url('section3-background.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
 }
