@@ -77,15 +77,26 @@ header {
     margin-right: 20px;
 }
 /*footer*/
+/* styles.css */
 footer {
-    display: none; /* Initially hide the footer */
-    background-color: #8E9C95; /* Choose your preferred background color */
-    color: white; /* Text color for better readability on the dark background */
+    background-color: #D4C9BE;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    padding: 20px; /* Adjust the padding to your liking */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
 }
 
 .profile {
@@ -188,16 +199,16 @@ nav ul li a.active {
 }
 
 #about-me {
-    background-color: #B3724D;
+    background-color: #B0A292;
     
 }
 
 #coding-projects {
-    background-color: #745f53;
+    background-color: #8E9C95;
 }
 
 #UX-UI {
-    background-color: #953e0c;
+    background-color: #89A0AF;
     
 }
 /*slider & thumbnail for images*/
@@ -223,6 +234,28 @@ nav ul li a.active {
     width: 100%;
     height: auto;
 }
+
+/* Styles for Slider 1 */
+#slider1 {
+    /* Your slider styles go here */
+    width: 100%;
+    height: auto;
+}
+
+/* Styles for Slider 2 */
+#slider2 {
+    /* Your slider styles go here */
+    width: 100%;
+    height: auto;
+}
+
+/* Styles for Slider 3 */
+#slider3 {
+    /* Your slider styles go here */
+    width: 80%;
+    height: auto;
+}
+
 
 .slider button {
     position: absolute;
@@ -326,12 +359,7 @@ nav ul li a.active {
 
 /* Side title */
 .side-title {
-    flex: 0 0 30%; /* Adjust as needed */
-}
-
-/* Experiences */
-.sideTitle {
-    flex: 0 0 65%; /* Adjust as needed */
+    flex: 0 0 70%; /* Adjust as needed */
 }
 
 /* Individual experience */
