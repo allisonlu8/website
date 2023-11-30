@@ -374,13 +374,15 @@ nav ul li a.active {
     transition: background-color 0.3s;
 }
 
-/* style.css */
-
-.project-unit {
+.side-by-side-container {
     display: flex;
     justify-content: space-between;
-    max-width: 50%; /* Each project takes up 50% of the width */
-    margin: auto; /* Center the project units */
+}
+
+.project-unit {
+    max-width: 49%; /* Each project takes up 48% of the width to allow for some spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px; /* Add padding for spacing within each project unit */
 }
 
 .clickable-section {
@@ -396,11 +398,12 @@ nav ul li a.active {
 }
 
 .content {
-    max-width: 40%; /* Adjust the width of the content */
+    max-width: 100%; /* Adjust the width of the content */
 }
 
 .image-container {
-    max-width: 40%; /* Adjust the width of the image container */
+    max-width: 100%; /* Adjust the width of the image container */
 }
 
 /* Add any other styling as needed */
+
