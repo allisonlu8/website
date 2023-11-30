@@ -90,6 +90,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const sectionPageMap = {
+        "about-me": "about.html",
+        "coding-projects": "coding-projects.html",
+        "design": "uxuidesign.html",
+        // Add more mappings as needed
+    };
+    const externalLinks = {
+        "website": "https://github.com/allisonlu8/website",
+        "currency-exchange": "https://github.com/allisonlu8/CurrencyExchange",
+        // Add more mappings as needed
+    };
+
+    const clickableSections = document.querySelectorAll(".clickable-section");
+
+    clickableSections.forEach((section) => {
+        section.addEventListener("click", function () {
+            const sectionId = this.id;
+            const pageName = sectionPageMap[sectionId];
+            if (pageName) {
+                window.location.href = pageName;
+            }
+            const externalLink = externalLinks[sectionId];
+            if (externalLink) {
+                window.open(externalLink, "_blank"); // Open link in a new tab
+            }
+        });
+    });
+    
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth",
+            });
+        });
+    });
+});
+
 
 /*For section selection in adventure */
 // script.js

@@ -366,3 +366,41 @@ nav ul li a.active {
 .description {
     margin-bottom: 20px;
 }
+
+/* style.css */
+
+.clickable-section {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* style.css */
+
+.project-unit {
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%; /* Each project takes up 50% of the width */
+    margin: auto; /* Center the project units */
+}
+
+.clickable-section {
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px; /* Adjust as needed for spacing between sections */
+}
+
+.clickable-image {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.content {
+    max-width: 40%; /* Adjust the width of the content */
+}
+
+.image-container {
+    max-width: 40%; /* Adjust the width of the image container */
+}
+
+/* Add any other styling as needed */

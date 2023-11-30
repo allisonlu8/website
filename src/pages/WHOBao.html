@@ -4,23 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allison Lu</title>
-    <!--Img size-->
-    <style>
-        /* Optional: Add some basic styling for the gallery */
-        .image-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .image-gallery img {
-            max-width: 30%;
-            height: auto;
-        }
-        /* Apply a rotation based on the unique ID */
-        #rotateSpecificImage {
-            transform: rotate(90deg);
-        }
-    </style>
     <link rel="icon" href="../img/favicon-headphones.png" type="image/x-icon">
     <link rel="stylesheet" href="../components/style.css">
     <script defer src="../components/script.js"></script>
@@ -29,70 +12,34 @@
     <!-- Your content goes here -->
     <!-- Include the navigation bar using JavaScript -->
     <div id="navbar-container"></div>
-    <!-- Include page title-->
     <header class="header-documentation">
         <div class="header-content">
-            <h2 class="custom-header">documentation</h2>
+            <h1 class="custom-header">WHOBao</h1>
             <p class="header-description">sharing happy seeds.</p>
         </div>
     </header>
     <main>
-        <section id="Friends-family" class="section">
-            <h2>Documentation of loved ones:</h2>
-            <p>I wouldn't be the person I am without my family and friends. 
-                They have played such a pivotal role in my personality.
-                There's nothing like sharing our happiness and memries with one another.</p>
+        <section id="whobao intro" class="section">
+            <div class ="content">
+                <h1>WHOBao</h1>
+                <p></p>
+                <p>Java, HTML, CSS, Javascript<br>
+                Currency Exchange, this website</p>
+            </div>
+            <div class = "image-container">
+                <img class="icons" src="../img/coding projects icon.png" alt="Programming Icon">
+            </div>
         </section>
-        <div class="slider-container" id="slider1">
-            <div class="slider">
-                <button class="prev" onclick="prevSlide(1)">❮</button>
-                <div class="slide" id="slide1a">
-                    <img src="../img/profile/ireland kat+ting1.JPG" alt="Kat and Ting">
-                </div>
-                <div class="slide" id="slide1b">
-                    <img src="../img/profile/ireland kat+ting2.JPG" alt="Kat and Ting">
-                </div>
-                <div class="slide" id="slide1c">
-                    <img src="../img/profile/rian.jpg" alt="Rian">
-                </div>
-                <div class="slide" id="slide1d">
-                    <img src="../img/profile/vicky.JPG" alt="Vicky">
-                </div>
-                <div class="slide" id="slide1e">
-                    <img src="../img/profile/grace.JPG" alt="Grace">
-                </div>
-                <div class="slide" id="slide1f">
-                    <img src="../img/profile/lanlan.jpg" alt="LanLan">
-                </div>
-                <div class="slide" id="slide1g">
-                    <img src="../img/profile/steph ting julie.jpg" alt="Steph, Ting, Julie">
-                </div>
-                <div class="slide" id="slide1h">
-                    <img id="rotateSpecificImage" src="../img/profile/rosanna.jpg" alt="Rosanna">
-                </div>
-                <button class="next" onclick="nextSlide(1)">❯</button>
-                <!-- Add more slides as needed -->
+
+        <section id="UX-UI" class="section">
+            <div class="image-container">
+                <img class="icons" src = "../img/smartphone.png" alt="Smartphone">
             </div>
-                <div class="thumbnail-container">
-                    <div class="thumbnails" id="thumbnails1">
-                        <img src="../img/profile/ireland kat+ting1.JPG" alt="Kat and Ting" onclick="currentSlide(1, 1)" class="thumbnail">
-                        <img src="../img/profile/ireland kat+ting2.JPG" alt="Kat and Ting" onclick="currentSlide(2, 1)" class="thumbnail">
-                        <img src="../img/profile/rian.jpg" alt="Rian" onclick="currentSlide(3, 1)" class="thumbnail">
-                        <img src="../img/profile/vicky.jpg" alt="Vicky" onclick="currentSlide(4, 1)" class="thumbnail">
-                        <img src="../img/profile/grace.jpg" alt="Grace" onclick="currentSlide(5, 1)" class="thumbnail">
-                        <img src="../img/profile/lanlan.jpg" alt="LanLan" onclick="currentSlide(6, 1)" class="thumbnail">
-                        <img src="../img/profile/steph ting julie.jpg" alt="Steph, Ting, Julie" onclick="currentSlide(7,1 )" class="thumbnail">
-                        <img id="rotateSpecificImage" src="../img/profile/rosanna.jpg" alt="Rosanna" onclick="currentSlide(8, 1)" class="thumbnail">
-                        <!-- Add more thumbnails as needed -->
-                    </div>
+            <div class="content">
+                <h2>UX/UI Research Design:</h2>
+                <p>Figma <br>
+                    WHOBao</p>
             </div>
-        </div>
-        <section id="Scenery" class="section">
-            <h2>Documentation of landscapes:</h2>
-            <p>I've been given the opportunity to travel around the world and I wanted to share my exerience and joy with others.
-                Leaving home and just exploring, has given me time to self-reflect and view the world in a different light.
-                From these photos, I hope to create the idea that in the grand scheme of things, life is short and we should all take the moment to appreiciate it.
-            </p>
         </section>
         <!-- Gallery using a div container -->
         <div class="slider-container" id="slider2">
