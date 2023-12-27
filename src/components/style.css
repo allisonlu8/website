@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #e5d3b2; /* Earth tone color */
-    padding: 15px 20px;
+    padding: 3px 20px;
 }
 
 .header-content {
@@ -68,7 +68,7 @@ header {
 }
 
 .logo-container img {
-    width: 100px; /* Adjust the size of your logo */
+    width: 40px; /* Adjust the size of your logo */
     margin-right: 20px;
 }
 
@@ -76,12 +76,12 @@ header {
     width: 100px; /* Adjust the size of your logo */
     margin-right: 20px;
 }
+
 /*footer*/
-/* styles.css */
 footer {
-    background-color: #D4C9BE;
+    background-color: #C3B091;
     color: #fff;
-    padding: 20px;
+    padding: px;
     text-align: center;
 }
 
