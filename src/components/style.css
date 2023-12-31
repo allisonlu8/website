@@ -14,6 +14,11 @@ header {
     padding: 3px 20px;
 }
 
+/*include tabs*/
+.tab-separated {
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
 .header-content {
     text-align: left; /* Left align content */
     height: 75vh;
