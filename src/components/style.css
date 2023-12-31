@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #F7D7BB; /* Earth tone color */
+    background-color: #D5DDEC; /* Earth tone color F7D7BB*/
     color: #534741; /* Earth tone color for text */
     scroll-behavior: smooth; /* Enable smooth scrolling */
 }
@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e5d3b2; /* Earth tone color */
+    background-color: #E2E9F5; /* Earth tone color e5d3b2 */
     padding: 3px 20px;
 }
 
@@ -46,7 +46,7 @@ header {
 }
 
 .header-journey{
-    background-color: #D4C9BE; /* Unique background color for Documentation header */
+    background-color: #D5DDEC; /* Unique background color for Documentation header */
     padding: 10px;
 }
 
@@ -261,7 +261,6 @@ nav ul li a.active {
     height: auto;
 }
 
-
 .slider button {
     position: absolute;
     top: 50%;
@@ -410,5 +409,6 @@ nav ul li a.active {
     max-width: 100%; /* Adjust the width of the image container */
 }
 
-/* Add any other styling as needed */
-
+.rounded-image {
+    border-radius: 10px; /* Adjust the value to control the roundness of the corners */
+}
