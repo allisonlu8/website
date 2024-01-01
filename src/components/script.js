@@ -94,13 +94,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const sectionPageMap = {
         "about-me": "about.html",
         "coding-projects": "coding-projects.html",
-        "design": "uxuidesign.html",
+        "design": "ux-projects.html",
+        "whobao": "whobao.html",
+        "futureme": "futureme.html"
         // Add more mappings as needed
     };
     const externalLinks = {
         "website": "https://github.com/allisonlu8/website",
         "currency-exchange": "https://github.com/allisonlu8/CurrencyExchange",
         // Add more mappings as needed
+
     };
 
     const clickableSections = document.querySelectorAll(".clickable-section");
