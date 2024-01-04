@@ -92,8 +92,8 @@ header {
 
 /*footer*/
 footer {
-    background-color: #C3B091;
-    color: #fff;
+    background-color: #E2E9F5;
+    color: #534741;
     padding: 1em 0;/*px*/
     text-align: center;
     bottom: 0;
@@ -400,4 +400,19 @@ nav ul li a.active {
 
 .rounded-image {
     border-radius: 10px; /* Adjust the value to control the roundness of the corners */
+}
+
+#excel-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.excel-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.excel-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
 }
