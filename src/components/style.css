@@ -90,6 +90,11 @@ header {
     margin-right: 20px;
 }
 
+.logo-container a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent element */
+}
+
 /*footer*/
 footer {
     background-color: #E2E9F5;
