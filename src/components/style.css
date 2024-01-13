@@ -45,6 +45,7 @@ header {
     padding: 10px;
 }
 .header-journey{
+    
     background-color: #D5DDEC; /* Unique background color for Documentation header */
     padding: 10px;
 }
@@ -378,7 +379,7 @@ nav ul li a.active {
 }
 
 .project-unit {
-    max-width: 49%; /* Each project takes up 48% of the width to allow for some spacing */
+    max-width: 50%; /* Each project takes up 48% of the width to allow for some spacing */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     padding: 10px; /* Add padding for spacing within each project unit */
 }
@@ -390,7 +391,7 @@ nav ul li a.active {
 }
 
 .clickable-image {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     cursor: pointer;
 }
