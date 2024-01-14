@@ -45,8 +45,12 @@ header {
     padding: 10px;
 }
 .header-journey{
-    
-    background-color: #D5DDEC; /* Unique background color for Documentation header */
+    height: 75vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    /*background-color: #D5DDEC; /* Unique background color for Documentation header */
     padding: 10px;
 }
 
@@ -65,6 +69,12 @@ header {
 }
 
 .custom-header {
+    position: absolute;
+    top: 50%; /* Adjust vertically as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    /*old*/
     font-family: 'Ariel', sans-serif;
     color: #333;
     font-size: 36px;
