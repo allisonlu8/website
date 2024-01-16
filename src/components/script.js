@@ -96,7 +96,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "coding-projects": "coding-projects.html",
         "design": "ux-projects.html",
         "whobao": "whobao.html",
-        "futureme": "futureme.html"
+        "futureme": "futureme.html",
+        "movement": "movement.html",
+        "documentation": "documentation.html",
+        "illustration": "illustration.html"
         // Add more mappings as needed
     };
     const externalLinks = {

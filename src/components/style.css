@@ -187,6 +187,7 @@ nav ul li a.active {
 /*dropdown*/
 .dropdown {
     position: relative;
+    display: inline-block;
 }
 
 .dropdown-content {
@@ -203,7 +204,9 @@ nav ul li a.active {
     color: #534741; /* Earth tone color */
 }
 
-.dropdown:hover .dropdown-content {
+/* Adjusted styles to keep the dropdown visible on hover */
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
     display: block;
 }
 
@@ -217,7 +220,7 @@ nav ul li a.active {
     text-align: center;
     color: #fff;
     padding: 15px 20px;
-    width: 48%;
+    margin-top: 20px;
     margin-bottom: 20px;
     background-color: #D4C9BE; /* Add a background color to sections for better visibility */
 }
@@ -240,7 +243,7 @@ nav ul li a.active {
 .image-container {
     flex: 1;
     overflow: hidden;
-    max-width: 100%;max-width: 100%; /* Adjust the width of the image container */
+    max-width: 100%;/* Adjust the width of the image container */
     margin-bottom: 10px;
 }
 
@@ -255,27 +258,29 @@ nav ul li a.active {
     max-width: 800px; /* Line extends the width of the container */
 }
 #movement {
-    background-color: #B3724D;
-    background-image: url('section1-background.jpg'); /* Add your background image */
+    background-color: #d7d9de; /*#ddd7d0;  /*#D4C9BE; #B3724D;*/
+    background-image: url(../img/header/SVG/movement.svg); /* Add your background image */
     background-size: cover;
     background-position: center;
+    color:#534741;
 }
 
 #documentation {
-    background-image: url('section2-background.jpg'); /* Add your background image */
+    background-image: url(../img/header/SVG/documentation.svg); /* Add your background image */
     background-size: cover;
     background-position: center;
+    color: white;
 }
 
 #illustration {
-    background-image: url('section3-background.jpg'); /* Add your background image */
+    background-image: url(../img/header/illustration.jpeg); /* Add your background image */
     background-size: cover;
     background-position: center;
+    color: #534741;
 }
 
 #about-me {
     background-color: #B0A292;
-    
 }
 
 /*slider & thumbnail for images*/
@@ -406,11 +411,10 @@ nav ul li a.active {
     margin-bottom: 20px;
 }
 
-/* style.css */
-
 .clickable-section {
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-bottom: 20px; /* Adjust as needed for spacing between sections */
 }
 
 .side-by-side-container {
@@ -422,15 +426,15 @@ nav ul li a.active {
 }
 
 .project-unit {
-    max-width: 50%; /* Each project takes up 48% of the width to allow for some spacing */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    padding: 10px; /* Add padding for spacing within each project unit */
-}
-
-.clickable-section {
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-bottom: 20px; /* Adjust as needed for spacing between sections */
+    width: 48%;
+    margin-bottom: 20px;
+    background-color: #D4C9BE;
+    overflow: hidden; /* Ensure the section container clips its contents */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%; /* Set maximum width to prevent overflow */
 }
 
 .clickable-image {
@@ -447,6 +451,9 @@ nav ul li a.active {
     border-radius: 10px; /* Adjust the value to control the roundness of the corners */
 }
 
+
+/*Excel file*/
+/*
 #excel-container {
     max-width: 800px;
     margin: 0 auto;
@@ -460,7 +467,7 @@ nav ul li a.active {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
-}
+}*/
 
 /* Add this style to handle small screens */
 @media (max-width: 768px) {
