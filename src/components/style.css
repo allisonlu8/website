@@ -27,11 +27,6 @@ header {
     z-index: 1; /* Ensure header content is above other elements */
 }
 
-.header-about {
-    background-color: #D4C9BE; /* Unique background color for About header */
-    padding: 10px;
-}
-
 .header-adventure{
     background-color: transparent; /* Unique background color for Adventure header */
     padding: 10px;
@@ -135,7 +130,7 @@ header {
 footer {
     background-color: #E2E9F5;
     color: #534741;
-    padding: 1em 0;/*px*/
+    padding: 0.5px;/*1em 0;/*px*/
     text-align: center;
     bottom: 0;
     width: 100%;
@@ -218,11 +213,10 @@ nav ul li a.active {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
     padding: 15px 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #D4C9BE; /* Add a background color to sections for better visibility */
+    /*background-color: #D4C9BE; /* Add a background color to sections for better visibility */
 }
 
 .case-study-section{
@@ -277,10 +271,6 @@ nav ul li a.active {
     background-size: cover;
     background-position: center;
     color: #534741;
-}
-
-#about-me {
-    background-color: #B0A292;
 }
 
 /*slider & thumbnail for images*/
@@ -415,6 +405,7 @@ nav ul li a.active {
     cursor: pointer;
     transition: background-color 0.3s;
     margin-bottom: 20px; /* Adjust as needed for spacing between sections */
+    padding: 30px;
 }
 
 .side-by-side-container {
@@ -428,7 +419,6 @@ nav ul li a.active {
 .project-unit {
     width: 48%;
     margin-bottom: 20px;
-    background-color: #D4C9BE;
     overflow: hidden; /* Ensure the section container clips its contents */
     display: flex;
     flex-direction: column;
