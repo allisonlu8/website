@@ -23,6 +23,8 @@ header {
     text-align: left; /* Left align content */
     height: 75vh;
     padding: 15px 20px;
+    position: relative;
+    z-index: 1; /* Ensure header content is above other elements */
 }
 
 .header-about {
@@ -31,8 +33,24 @@ header {
 }
 
 .header-adventure{
-    background-color: #D4C9BE; /* Unique background color for Adventure header */
+    background-color: transparent; /* Unique background color for Adventure header */
     padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-adventure::before {
+    content: ""; /* Create a pseudo-element to act as the background image */
+    background-image: url('../img/header/adventure.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5; /* Adjust the opacity as needed (0.0 to 1.0) */
+    z-index: -1; /* Move the pseudo-element behind the content */
 }
 
 .header-documentation{
@@ -44,14 +62,26 @@ header {
     background-color: #D4C9BE; /* Unique background color for Documentation header */
     padding: 10px;
 }
+
 .header-journey{
-    height: 75vh;
+    background-color: transparent; /* Unique background color for Adventure header */
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-journey::before {
+    content: ""; /* Create a pseudo-element to act as the background image */
+    background-image: url('../img/header/journey.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.2;
-    /*background-color: #D5DDEC; /* Unique background color for Documentation header */
-    padding: 10px;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5; /* Adjust the opacity as needed (0.0 to 1.0) */
+    z-index: -1; /* Move the pseudo-element behind the content */
 }
 
 #coding-projects {
@@ -69,11 +99,6 @@ header {
 }
 
 .custom-header {
-    position: absolute;
-    top: 50%; /* Adjust vertically as needed */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
     /*old*/
     font-family: 'Ariel', sans-serif;
     color: #333;
@@ -192,6 +217,9 @@ nav ul li a.active {
     text-align: center;
     color: #fff;
     padding: 15px 20px;
+    width: 48%;
+    margin-bottom: 20px;
+    background-color: #D4C9BE; /* Add a background color to sections for better visibility */
 }
 
 .case-study-section{
@@ -212,6 +240,8 @@ nav ul li a.active {
 .image-container {
     flex: 1;
     overflow: hidden;
+    max-width: 100%;max-width: 100%; /* Adjust the width of the image container */
+    margin-bottom: 10px;
 }
 
 .icons {
@@ -386,6 +416,9 @@ nav ul li a.active {
 .side-by-side-container {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px; /* Add margin to separate from header-content */
+    position: relative;
+    z-index: 0; /* Set a lower z-index to position it behind header content */
 }
 
 .project-unit {
@@ -410,10 +443,6 @@ nav ul li a.active {
     max-width: 100%; /* Adjust the width of the content */
 }
 
-.image-container {
-    max-width: 100%; /* Adjust the width of the image container */
-}
-
 .rounded-image {
     border-radius: 10px; /* Adjust the value to control the roundness of the corners */
 }
@@ -431,4 +460,15 @@ nav ul li a.active {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+}
+
+/* Add this style to handle small screens */
+@media (max-width: 768px) {
+    .side-by-side-container {
+        flex-direction: column; /* Stack sections on top of each other on small screens */
+    }
+
+    .section {
+        width: 100%; /* Full width on small screens */
+    }
 }
