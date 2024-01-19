@@ -79,6 +79,27 @@ header {
     z-index: -1; /* Move the pseudo-element behind the content */
 }
 
+.header-home{
+    background-color: transparent; /* Unique background color for Adventure header */
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-home::before {
+    content: ""; /* Create a pseudo-element to act as the background image */
+    background-image: url('../img/header/home.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5; /* Adjust the opacity as needed (0.0 to 1.0) */
+    z-index: -1; /* Move the pseudo-element behind the content */
+}
+
 #coding-projects {
     background-color: #8E9C95;
 }
@@ -273,6 +294,69 @@ nav ul li a.active {
     color: #534741;
 }
 
+#journey,
+#adventure,
+#about-me {
+    background-size: cover;
+    background-position: center;
+    color: #534741;
+    position: relative; /* Ensure the container has a positioning context for absolute positioning of text */
+    text-align: center; /* Center-align text */
+}
+
+#journey::before,
+#adventure::before,
+#about-me::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/header/journey.jpg);
+    background-size: cover;
+    background-position: center;
+    pointer-events: none; /* Allow interaction with text behind the overlay */
+}
+
+/* Repeat the above styles for each section with different background images */
+#adventure::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/header/adventure.jpg);
+    background-size: cover;
+    background-position: center;
+    pointer-events: none; /* Allow interaction with text behind the overlay */
+}
+
+#about-me::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/header/about.JPG);
+    background-size: cover;
+    background-position: center;
+    pointer-events: none; /* Allow interaction with text behind the overlay */
+}
+
+/* Ensure text appears above the overlay */
+#journey h2, #journey h4,
+#adventure h2, #adventure h4,
+#about-me h2, #about-me h4 {
+    position: relative;
+    z-index: 1;
+}
+
 /*slider & thumbnail for images*/
 .slider-container {
     position: relative;
@@ -438,7 +522,10 @@ nav ul li a.active {
 }
 
 .rounded-image {
-    border-radius: 10px; /* Adjust the value to control the roundness of the corners */
+    border-radius: 50px; /* Adjust the value to control the roundness of the corners */
+    max-width: 350px;
+    max-height: 350px;
+    padding-top: 5%;
 }
 
 
