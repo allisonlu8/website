@@ -166,13 +166,18 @@ document.addEventListener('DOMContentLoaded', function() {
 // for the slider photos
 function createSlider(sliderId, slidePrefix, imageCount) {
     var slideIndex = 1;
+    var slideTimer;
 
     function plusSlides(n) {
+        clearTimeout(slideTimer); // Reset the timer
         showSlides((slideIndex += n), sliderId);
+        slideTimer = setTimeout(autoSlide, 2500); // Restart the timer
     }
 
     function currentSlide(n) {
+        clearTimeout(slideTimer); // Reset the timer
         showSlides((slideIndex = n), sliderId);
+        slideTimer = setTimeout(autoSlide, 2500); // Restart the timer
     }
 
     function showSlides(n, id) {
@@ -212,11 +217,31 @@ function createSlider(sliderId, slidePrefix, imageCount) {
 
     function autoSlide() {
         plusSlides(1);
-        setTimeout(autoSlide, 3000); // Change slide every 3 seconds
+        // setTimeout(autoSlide, 3000); // Change slide every 3 seconds
     }
 
     // Start automatic sliding
-    setTimeout(autoSlide, 3000);
+    slideTimer = setTimeout(autoSlide, 3000);
+
+    // Start automatic sliding
+    //setTimeout(autoSlide, 3000);
+
+    // Event listeners for arrow buttons
+    document.querySelector(`#${sliderId} .prev`).addEventListener("click", function () {
+        prevSlide();
+    });
+
+    document.querySelector(`#${sliderId} .next`).addEventListener("click", function () {
+        nextSlide();
+    });
+
+    // Event listeners for thumbnails
+    var thumbnailElements = document.querySelectorAll(`#${sliderId} .thumbnail`);
+    thumbnailElements.forEach(function (thumbnail, index) {
+        thumbnail.addEventListener("click", function () {
+            currentSlide(index + 1);
+        });
+    });
 
     // Return the slide index and functions for external control
     return {
