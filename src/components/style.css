@@ -275,6 +275,17 @@ nav ul li a.active {
     margin-bottom: 10px;
 }
 
+.video-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust spacing between video groups */
+  }
+  
+  .youtube-video {
+    margin-bottom: 20px; /* Adjust spacing between videos */
+  }
+
 .icons {
     height: 50vh;
     object-fit: cover;
