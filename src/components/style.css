@@ -97,7 +97,7 @@ header {
 
 #subcategory {
     text-align: center;
-    padding: 0 200px 10px; /* Adjust top, right, bottom, left padding as needed */
+    padding: 0 200px; /* Adjust top, right, bottom, left padding as needed */
 }
 
 .subcategory-title {
