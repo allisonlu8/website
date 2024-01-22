@@ -222,6 +222,7 @@ nav ul li a.active {
     position: absolute;
     background-color: #cabca3; /* Earth tone color */
     min-width: 160px;
+    z-index: 1; /* Ensure the dropdown is above other elements */
 }
 
 .dropdown-content a {
