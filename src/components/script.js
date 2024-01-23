@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // for the slider photos
-function createSlider(sliderId, slidePrefix, imageCount) {
+function createSlider(sliderId) {
     var slideIndex = 1;
     var slideTimer;
 
@@ -253,44 +253,5 @@ function createSlider(sliderId, slidePrefix, imageCount) {
 }
 
 // Create sliders
-var slider1 = createSlider("slider1", "slide1_", 3);
-var slider2 = createSlider("slider2", "slide2_", 3);
-var slider3 = createSlider("slider3", "slide3_", 3);
-
-/*
-document.addEventListener('DOMContentLoaded', function () {
-    // Replace 'your-data.csv' with the path to your CSV file
-    fetch('Competitive_Analysis')
-        .then(response => response.text())
-        .then(data => {
-            const rows = data.split('\n');
-            const container = document.getElementById('excel-container');
-
-            // Create a table
-            const table = document.createElement('table');
-            table.classList.add('excel-table');
-
-            rows.forEach(row => {
-                const columns = row.split(',');
-
-                // Create a table row
-                const tr = document.createElement('tr');
-
-                columns.forEach(column => {
-                    // Create a table cell
-                    const td = document.createElement('td');
-                    td.textContent = column.trim();
-
-                    // Append the cell to the row
-                    tr.appendChild(td);
-                });
-
-                // Append the row to the table
-                table.appendChild(tr);
-            });
-
-            // Append the table to the container
-            container.appendChild(table);
-        })
-        .catch(error => console.error('Error fetching data:', error));
-}); */
+var slider1 = createSlider("slider1");
+var slider2 = createSlider("slider2");
