@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var navbarContainer = document.getElementById("navbar-container");
 
     // Fetch and inject the navbar.html content into the container
-    fetch("../components/index.html")
+    fetch("../components/header.html")
         .then(response => response.text())
         .then(data => {
             navbarContainer.innerHTML = data;
