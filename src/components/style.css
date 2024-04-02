@@ -534,6 +534,20 @@ nav ul li a.active {
     position: relative;
     z-index: 0; /* Set a lower z-index to position it behind header content */
 }
+.centered-container {
+    display: flex;
+    justify-content: center; /* Center the contents horizontally */
+    align-items: center; /* Center the contents vertically */
+    margin-top: 20px; /* Add margin to separate from header-content */
+    position: relative;
+    z-index: 0; /* Set a lower z-index to position it behind header content */
+    width: 100%; /* Ensure the container takes up the full width */
+}
+
+.centered-content {
+    max-width: 800px; /* Set a maximum width for the centered content */
+    padding: 20px; /* Add some padding to the centered content */
+}
 
 .project-unit {
     width: 48%;

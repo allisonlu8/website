@@ -107,6 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const externalLinks = {
         "website": "https://github.com/allisonlu8/website",
         "currency-exchange": "https://github.com/allisonlu8/CurrencyExchange",
+        "fraud": "https://github.com/allisonlu8/Credit_Card_Fraud_Detection" 
         // Add more mappings as needed
 
     };
